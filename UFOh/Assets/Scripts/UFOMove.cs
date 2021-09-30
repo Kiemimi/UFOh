@@ -41,7 +41,6 @@ public class UFOMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log(UFORigidBody.position + movement * moveSpeed * Time.fixedDeltaTime);
         UFORigidBody.MovePosition(UFORigidBody.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 }
