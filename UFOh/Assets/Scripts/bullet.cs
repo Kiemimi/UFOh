@@ -8,7 +8,11 @@ public class bullet : MonoBehaviour
     {
         if (hitInfo.GetComponent<MurderScript>() == true)
         {
-            Debug.Log("Yes");
+            MurderScript murderscript = hitInfo.GetComponent<MurderScript>();
+            if (murderscript != null)
+            {
+                murderscript.TakeDamage(20);
+            }
         }
         Destroy(gameObject);
     }
