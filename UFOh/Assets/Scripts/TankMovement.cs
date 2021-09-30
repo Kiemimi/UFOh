@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TankMovement : MonoBehaviour
 {
-
     public float moveSpeed = 500f;
     public Rigidbody2D tankRigidBody;
     Vector3 getTrans;
