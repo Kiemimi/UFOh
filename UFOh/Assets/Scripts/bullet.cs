@@ -14,6 +14,14 @@ public class bullet : MonoBehaviour
                 murderscript.TakeDamage(20);
             }
         }
+        else if (hitInfo.GetComponent<breakableWallScript>() == true)
+        {
+            breakableWallScript breakableWall = hitInfo.GetComponent<breakableWallScript>();
+            if(breakableWall != null)
+            {
+                breakableWall.fuckingDie();
+            }
+        }
         Destroy(gameObject);
     }
 }
