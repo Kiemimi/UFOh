@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D hitInfo)
     {
+        if (hitInfo.GetComponent<MurderScript>() == true)
+        {
+            Debug.Log("Yes");
+        }
         Destroy(gameObject);
     }
 }

@@ -929,6 +929,7 @@ GameObject:
   - component: {fileID: 427438996}
   - component: {fileID: 427438997}
   - component: {fileID: 427438998}
+  - component: {fileID: 427438999}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -1079,6 +1080,20 @@ MonoBehaviour:
   firePoint: {fileID: 529104031}
   bulletPrefab: {fileID: 6165595567407573538, guid: 834e64630727dfb43a3229d2c4f4fd7f, type: 3}
   bulletForce: 20
+--- !u!114 &427438999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427438992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 958735a7327e48c4e91daef7b5849ce9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 60
+  deathEffect: {fileID: 0}
 --- !u!1 &438910914
 GameObject:
   m_ObjectHideFlags: 0
@@ -3499,6 +3514,7 @@ GameObject:
   - component: {fileID: 933914307}
   - component: {fileID: 933914310}
   - component: {fileID: 933914311}
+  - component: {fileID: 933914312}
   m_Layer: 0
   m_Name: UFO
   m_TagString: Untagged
@@ -3639,6 +3655,20 @@ MonoBehaviour:
   firePoint: {fileID: 1448773308}
   bulletPrefab: {fileID: 5556414000172864629, guid: 750d70a7f96737d4bad5b607b3d42e71, type: 3}
   bulletForce: 20
+--- !u!114 &933914312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933914305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 958735a7327e48c4e91daef7b5849ce9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 60
+  deathEffect: {fileID: 0}
 --- !u!1 &944939638
 GameObject:
   m_ObjectHideFlags: 0
@@ -5384,7 +5414,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.003978133, y: -0.0025212169}
