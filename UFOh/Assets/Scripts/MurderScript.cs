@@ -20,11 +20,16 @@ public class MurderScript : MonoBehaviour
         }
     }
 
+    void loadNew()
+    {
+        SceneManager.LoadScene("LevelOne");
+    }
+
     void Die()
     {
         camera.GetComponent<screenShake>().TriggerShake();
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
-        SceneManager.LoadScene("LevelOne");
+        Invoke("loadNew", 3.0f);
     }
 }
